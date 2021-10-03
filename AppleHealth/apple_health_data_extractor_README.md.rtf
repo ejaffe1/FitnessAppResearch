@@ -1,0 +1,25 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Ezra Jaffe 08/18/2021\
+\
+
+\f1\b apple_health_data_extractor.py
+\f0\b0 \
+\
+This program reorganizes the data from apple health csv files created by apple_health_data_parser.py. The StepCount.csv, DistanceWalkingRunning.csv, WalkingSpeed.csv, HeartRate.csv files are extracted and modified into StepsPerDay.csv, TotalDistancePerDay.csv, AvgWalkingSpeedPerDay.csv, AvgHeartRatePerDay.csv files. The original files contain large, raw data. The new files organize the data into a per day or an average basis.\
+\
+Steps:\
+1) Place apple_health_data_extractor.py
+\f1\b  
+\f0\b0 in same folder as CSV files created from apple-health-data-parser.py ( StepCount.csv, DistanceWalkingRunning.csv, WalkingSpeed.csv, HeartRate.csv)\
+\
+2) Run apple_health_data_extractor.py in either IDLE or Terminal (No file paths needed)\
+\
+3) New CSV Files will be created/re-written and placed in the stated folder\
+\
+Note: Each CSV file has it\'92s own function, thus the main function has function calls to each one. If the user does not have a certain csv source file, that function can be commented out in main. }
